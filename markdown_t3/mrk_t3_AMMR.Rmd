@@ -39,6 +39,14 @@ obj_psq
 ```{r}
 sample_variables(obj_psq)
 ```
+*¿Cuántas muestras y taxones tiene el objeto?*  
+
+Tiene 222 muestras y 130 taxones.
+
+*¿Qué variables están disponibles en los metadatos de la muestra*  
+
+8 variables de metadatos.
+
 
 # Curvas de rarefracción
 
@@ -50,6 +58,15 @@ raremax <- min(rowSums(mat))
 rarecurve(mat, step = 100, sample = raremax, col = "blue", label = FALSE)
 rarecurve(mat[1:2, ], step = 100, sample = raremax, col = "blue", label = FALSE)
 ```
+
+*¿Qué indican estas curvas?*  
+
+Nos habla sobre que tan suficiente fue el muestreo por zona, ya que intenta acercarse al valor real.  
+
+
+*¿Hay muestras que deberían descartarse por bajo conteo?*  
+Sí las hay.  
+
 
 # Diversidad Alfa
 
