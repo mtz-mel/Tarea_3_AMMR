@@ -18,7 +18,7 @@ output: html_document
 
 # Carga de librerías
 
-```{r}
+```{r warning=TRUE}
 library(phyloseq)
 library(microbiome)
 library(ggplot2)
@@ -106,6 +106,7 @@ ordn_group <- plot_ordination(obj_psq, orden_pcoa, color = "group") +
 ordn_group
 ```
 
+
 # Gráfico de rango abundancia
 
 ```{r}
@@ -133,6 +134,11 @@ graf_apilada <- plot_bar(psq_filtrado, fill = "Phylum") +
   )
 graf_apilada
 ```
+
+*¿Hay algún phylum que domine?*  
+
+Sí, dominan los firmicutes.
+
 
 # Análisis con GlobalPatterns
 

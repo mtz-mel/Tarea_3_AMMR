@@ -183,10 +183,3 @@ ggplot(df_abund, aes(x = Rank, y = Abundance, color = SampleType)) +
        x = "Rango",
        y = "Abundancia Relativa (escala log10)") +
   theme_minimal()
-
-
-
-
-
-
-
